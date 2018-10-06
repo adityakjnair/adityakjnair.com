@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aditya Nair - Full Stack Developer</title>
+  <title>Aditya Nair</title>
+  <link rel="icon" type="ico" href="favicon.ico">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -25,7 +26,7 @@
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +47,7 @@
             <h1>Hi, I'm
               <span class="name">Aditya Nair</span>
             </h1>
-            <p>Full Stack Developer, Dabbler Photographer, Astronomy Enthusiast, Travel Addict</p>
+            <p>Full Stack Developer, Dabbler Photographer, Free Thinker, Travel Addict</p>
             <p>You've reached my little corner of the internet. </p>
             <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
           </div>
@@ -93,7 +94,7 @@
     </nav>
   </div>
   <!-- About Section -->
-  <div id="about">
+  <section id="about">
     <div class="container">
       <div class="section-title text-center center">
         <h2>About Me</h2>
@@ -105,21 +106,18 @@
         </div>
         <div class="col-md-8 col-md-offset-2">
           <div class="about-text">
-            <p>A dedicated professional with proficiency in mastering Software Developement situations, highly knowledgeable
-              in a wide variety of professional disciplines; focus for a reputed organisation in the IT industry.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh
-              ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+            <p>A Quick learner with a go getter attitude who is enthusiastic about mastering new technologies, bringing almost 4 years of critical thinking and creativity in the field of application development, scripting and coding, automation, web application design, product testing and deployment, UI testing, and requirements gathering.</p>
             <p class="text-center">
-              <a class="btn btn-primary" href="#">
+              <a class="btn btn-primary" href="cv/Aditya_Resume.pdf" data-placement="bottom" download>
                 <i class="fa fa-download"></i> Download Resume</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Skills Section -->
-  <div id="skills" class="text-center">
+  <section id="skills" class="text-center">
     <div class="container">
       <div class="section-title center">
         <h2>Skills</h2>
@@ -164,9 +162,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Portfolio Section -->
-  <div id="portfolio">
+  <section id="portfolio">
     <div class="container">
       <div class="section-title text-center center">
         <h2>Portfolio</h2>
@@ -294,9 +292,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Achievements Section -->
-  <div id="achievements" class="text-center">
+  <!-- <section id="achievements" class="text-center">
     <div class="container">
       <div class="section-title center">
         <h2>Some Stats</h2>
@@ -329,9 +327,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section> -->
   <!-- Resume Section -->
-  <div id="resume" class="text-center">
+  <section id="resume" class="text-center">
     <div class="container">
       <div class="section-title center">
         <h2>Experience</h2>
@@ -461,54 +459,47 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Contact Section -->
-  <div id="contact" class="text-center">
+  <section id="contact" class="text-center">
     <div class="container">
       <div class="section-title center">
         <h2>Contact</h2>
         <hr>
       </div>
       <div class="col-md-8 col-md-offset-2">
-        <div class="col-md-4">
-          <i class="fa fa-map-marker fa-2x"></i>
-          <p>4321 California St,
-            <br> San Francisco, CA 12345</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa fa-envelope-o fa-2x"></i>
-          <p>info@company.com</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fa fa-phone fa-2x"></i>
-          <p> +1 123 456 1234</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="col-md-8 col-md-offset-2">
-        <h3>Leave me a message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <h3>If you find any issues with the site please raise an issue here.</h3>
+        <p class="text-center">
+          <a class="btn btn-default" target="_blank" href="https://github.com/adityakjnair/adityakjnair.com/issues">Issues</a>
+        </p>
+        <h3>Have any ideas worth sharing? Please send me a mail and I'll get back to you on the email you provide.</h3>
+        <form action="http://formspree.io/adityakjnair@gmail.com" method="post">
           <div class="row">
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="form-group">
                 <input type="text" id="name" class="form-control" placeholder="Name" required="required">
                 <p class="help-block text-danger"></p>
               </div>
-            </div>
-            <div class="col-md-6">
+            </div> -->
+            <div class="col-md-12">
               <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <input type="email" name="_replyto" class="form-control" placeholder="Email" required="required">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <textarea name="body" class="form-control" rows="4" placeholder="Message" required="required"></textarea>
             <p class="help-block text-danger"></p>
           </div>
           <div id="success"></div>
-          <button type="submit" class="btn btn-default">Send Message</button>
+          <button type="submit" value="Send" class="btn btn-default">Send Message</button>
         </form>
+        <!-- <form action="http://formspree.io/adityakjnair@gmail.com" method="post">
+          <input type="email" name="_replyto">
+          <textarea name="body"></textarea>
+          <input type="submit" value="Send">
+        </form> -->
         <div class="social">
           <ul>
             <li>
@@ -545,12 +536,15 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <div id="footer">
     <div class="container text-center">
       <div class="fnav">
-        <p>Copyright &copy; 2016 Aditya Nair. Designed by
-          <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a>
+        <p>This website is a pet project of mine to learn <a target="_blank" href="https://pages.github.com/">Github Pages</a>.
+          Here is the <a target="_blank" href="https://github.com/adityakjnair/adityakjnair.com" rel="nofollow">Source</a>.
+        </p>
+        <p>Special thanks to TemplateWire for the cool theme 
+          <a target="_blank" href="http://www.templatewire.com/verum-free-resume-cv-template" rel="nofollow">Verum</a>.
         </p>
       </div>
     </div>
@@ -564,7 +558,7 @@
   <script type="text/javascript" src="js/jquery.counterup.js"></script>
   <script type="text/javascript" src="js/waypoints.js"></script>
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script type="text/javascript" src="js/contact_me.js"></script>
+  <!-- <script type="text/javascript" src="js/contact_me.js"></script> -->
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
