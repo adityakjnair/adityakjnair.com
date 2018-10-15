@@ -8,10 +8,15 @@ function main() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          console.log(target.selector+" offset().top = "+target.offset().top)
+          var scrollto = target.offset().top;
+          if(target.selector==='#about' && ((scrollto<600 && scrollto>500) || (scrollto<400 && scrollto>300))){
+            scrollto = target.offset().top + 75;
+          }
           if (target.length) {
             $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
+              scrollTop: scrollto - 40
+            }, 1000);
             return false;
           }
         }
